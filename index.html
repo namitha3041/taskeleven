@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Image</title>
+</head>
+<body>
+    <h1>Hover Over the Image to Make it Disappear</h1>
+    
+    <!-- Image element -->
+    <img id="hoverImage" src="cat.jpg" alt="Sample Image">
+    
+    <script>
+        // Get the image element
+        const image = document.getElementById('hoverImage');
+
+        // Add event listener for when the mouse is over the image
+        image.addEventListener('mouseover', () => {
+            image.style.display = 'none'; // Make image disappear
+        });
+
+        // Add event listener for when the mouse leaves the image area
+        image.addEventListener('mouseout', () => {
+            image.style.display = 'block'; // Make image reappear
+        });
+    </script>
+</body>
+</html>
